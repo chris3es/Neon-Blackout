@@ -1,0 +1,5 @@
+[
+  { "date": "2025-11-25", "title": "New procedural nodes", "details": "Added dynamic routing and node risk levels for stealth paths." },
+  { "date": "2025-11-20", "title": "HUD revamp", "details": "Terminal overlay: packet trace, ping spikes, and inventory quickslots." },
+  { "date": "2025-11-12", "title": "Anti-cheat baseline", "details": "Validation hooks and role gating for dev commands (stubbed)." }
+]
