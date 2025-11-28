@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Neon Blackout — Game Hub</title>
+  <meta name="description" content="Neon Blackout: a cyberpunk game hub with live demos, updates, and dev tools." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="scanlines">
+  <header>
+    <nav class="nav">
+      <div class="logo">NEON BLACKOUT</div>
+      <a href="#home">Home</a>
+      <a href="#play">Play</a>
+      <a href="#updates">Updates</a>
+      <a href="#contact">Contact</a>
+      <a class="cta-play" href="#play">Play Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-card">
+        <h1><span class="glitch" data-text="Neon Blackout">Neon Blackout</span></h1>
+        <p>A cyberpunk game hub with live demos, rapid updates, and slick dev controls.</p>
+        <div class="buttons">
+          <a class="btn" href="#play">Launch Latest Build</a>
+          <a class="btn" href="#updates">View Changelog</a>
+          <a class="btn" href="#contact">Join the Crew</a>
+        </div>
+      </div>
+      <div class="panel">
+        <h3 style="margin-top:0">Now Playing</h3>
+        <div class="list">
+          <div class="card">
+            <div class="row">
+              <strong>Prototype: Gridbreaker</strong>
+              <span class="tag">Alpha</span>
+            </div>
+            <p class="muted">A fast stealth-runner with modular hacking tools and procedural levels.</p>
+            <div class="buttons">
+              <button class="btn" data-demo="demo1">Load Demo 1</button>
+              <button class="btn" data-demo="demo2">Load Demo 2</button>
+              <button class="btn" data-demo="demo3">Load Demo 3</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="play" class="section">
+      <div class="grid">
+        <div class="col-8 panel">
+          <h3 style="margin-top:0">Live demo</h3>
+          <iframe class="demo" id="demoFrame" src="about:blank" title="Demo"></iframe>
+          <p class="muted" style="margin-top:10px">Tip: Use the Admin overlay to toggle dev HUD or FPS.</p>
+        </div>
+        <div class="col-4 panel">
+          <h3 style="margin-top:0">Build selector</h3>
+          <div class="list" id="buildList"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="updates" class="section panel">
+      <h3 style="margin-top:0">Changelog</h3>
+      <div id="changelog" class="list"></div>
+    </section>
+
+    <section id="contact" class="section panel">
+      <h3 style="margin-top:0">Contact</h3>
+      <p>Want to collaborate, test, or ship mods? Drop a message:</p>
+      <form id="contactForm">
+        <div class="row grid-2">
+          <input name="name" placeholder="Name" required />
+          <input name="email" type="email" placeholder="Email" required />
+        </div>
+        <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+        <div class="buttons">
+          <button class="btn" type="submit">Send</button>
+        </div>
+        <p id="contactStatus" class="muted"></p>
+      </form>
+    </section>
+  </main>
+
+  <div class="admin" aria-live="polite">
+    <span class="role">Role: DEV</span>
+    <label class="toggle"><input type="checkbox" id="hudToggle" /> <span>Dev HUD</span></label>
+    <label class="toggle"><input type="checkbox" id="fpsToggle" /> <span>FPS Counter</span></label>
+    <label class="toggle"><input type="checkbox" id="scanToggle" checked /> <span>Scanlines</span></label>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Neon Blackout. All rights reserved.
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
