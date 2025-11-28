@@ -1,0 +1,5 @@
+[
+  { "label": "v0.3.2 — Route Optimizer", "url": "https://example.com/build-032", "tags": ["alpha", "speed"] },
+  { "label": "v0.3.1 — Stealth Patch", "url": "https://example.com/build-031", "tags": ["stealth", "fixes"] },
+  { "label": "v0.3.0 — Procedural Maps", "url": "https://example.com/build-030", "tags": ["feature", "maps"] }
+]
